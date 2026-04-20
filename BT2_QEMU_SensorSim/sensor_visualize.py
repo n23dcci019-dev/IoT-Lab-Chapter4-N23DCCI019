@@ -1,8 +1,8 @@
 import matplotlib
 matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-from sensor_sim import SimUltrasonic, SimPotentiometer
-from time import sleep
+import matplotlib.pyplot as plt  # noqa: E402
+from sensor_sim import SimUltrasonic, SimPotentiometer  # noqa: E402
+from time import sleep  # noqa: E402
 
 us = SimUltrasonic(echo=24, trigger=23, base_distance=50.0)
 pot = SimPotentiometer(initial_value=0.3)
@@ -13,10 +13,10 @@ distances = []
 print("Bat dau thu thap du lieu ...")
 
 for i in range(50):
-	d = us.distance
-	distances.append(d)
-	print(f"Mau {i+1}/50: {d:.1f} cm")
-	sleep(0.1)
+    d = us.distance
+    distances.append(d)
+    print(f"Mau {i+1}/50: {d:.1f} cm")
+    sleep(0.1)
 
 print(f"Thu thap xong {len(distances)} mau.")
 
@@ -31,7 +31,7 @@ ax.fill_between(x, 0, [min(d, span) for d in distances], alpha=0.2, color='red',
 ax.set_title('Ultrasonic Sensor Simulation - Span Detection')
 ax.set_xlabel('Sample')
 ax.set_ylabel('Distances (cm)')
-ax.set_ylim(0, max(distances) +10)
+ax.set_ylim(0, max(distances) + 10)
 ax.legend(loc='upper right')
 ax.grid(True, alpha=0.3)
 
