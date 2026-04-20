@@ -1,0 +1,13 @@
+stages:
+  - lint
+
+lint_check:
+  stage: lint
+  image: python:3.11
+  before_script:
+    - pip install flake8
+  script:
+    - echo "Running flake8 on BT1..."
+    - flake8 BT1_QEMU_SystemMonitor/ --max-line-length=120
+    - echo "Running flake8 on BT2..."
+    - flake8 BT2_QEMU_SensorSim/ --max-line-length=120
