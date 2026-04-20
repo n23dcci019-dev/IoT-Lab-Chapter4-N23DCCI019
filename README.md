@@ -2,11 +2,9 @@
 
 # 
 
-!\[GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/n23dcci019-dev/IoT-Lab-Chapter4-N23DCCI019/main.yml?label=GitHub%20CI)
+!\[GitHub Actions](https://github.com/n23dcci019-dev/IoT-Lab-Chapter4-N23DCCI019/actions/workflows/main.yml/badge.svg)
 
-!\[GitLab Pipeline Status](https://img.shields.io/gitlab/pipeline-status/n23dcci019-dev-group/IoT-Lab-Chapter4-N23DCCI019?branch=main\&label=GitLab%20CI)
-
-# \*\*Họ tên:\*\* Le Khanh Duy
+!\[GitLab CI](https://gitlab.com/n23dcci019-dev-group/IoT-Lab-Chapter4-N23DCCI019/badges/main/pipeline.svg)\*\*Họ tên:\*\* Le Khanh Duy
 
 # \*\*MSSV:\*\* N23DCCI019
 
